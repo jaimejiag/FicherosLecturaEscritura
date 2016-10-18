@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="/res/raw/numero.txt:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/edt_raw"
+        tools:text="0"
+        android:textAlignment="viewEnd" />
+
+    <TextView
+        android:text="assets/valor.txt:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/edt_assets"
+        android:inputType="numberSigned"
+        tools:text="0"
+        android:textAlignment="viewEnd" />
+
+    <TextView
+        android:text="datos.txt en memoria interna:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:ems="10"
+        android:id="@+id/edt_interna"
+        android:inputType="numberSigned"
+        tools:text="0"
+        android:textAlignment="viewEnd" />
+
+    <TextView
+        android:text="dato_sd en memoria externa:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/edt_externa"
+        android:inputType="numberSigned"
+        tools:text="0"
+        android:textAlignment="viewEnd" />
+
+    <Button
+        android:text="+"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sumar" />
+
+    <TextView
+        android:text="Resultado:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_resultado"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textAlignment="viewEnd" />
+</LinearLayout>

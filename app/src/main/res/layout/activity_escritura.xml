@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Operando 1:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_operando1"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edt_operando1"
+        android:textAlignment="viewEnd"
+        android:text="3" />
+
+    <TextView
+        android:text="Operando 2:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_operando2"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edt_operando2"
+        android:text="2"
+        android:textAlignment="viewEnd" />
+
+    <Button
+        android:text="+"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_mas" />
+
+    <TextView
+        android:text="Resultado:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_resultado"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textAlignment="viewEnd" />
+
+    <TextView
+        android:text="Propiedades"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txv_propiedades"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+</LinearLayout>
