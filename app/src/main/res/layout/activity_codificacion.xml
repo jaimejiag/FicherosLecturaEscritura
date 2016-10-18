@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_codificacion"
     android:layout_width="match_parent"
@@ -8,6 +8,104 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.usuario.ficheros.Codificacion">
+    tools:context="com.example.usuario.ficheros.Codificacion"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Fichero:"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            tools:text="fichero" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="operaciones.txt"
+            android:ems="10"
+            android:id="@+id/edt_fichero"
+            android:layout_weight="1"
+            tools:text="operaciones.txt" />
+
+        <Button
+            android:text="Leer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_leer"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edt_contenido"
+        android:layout_weight="0.67" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Nuevo fichero:"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            tools:text="Nuevo fichero" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="otro.txt"
+            android:ems="10"
+            android:id="@+id/edt_nuevoFichero"
+            android:layout_weight="1"
+            tools:text="otro.txt" />
+
+        <Button
+            android:text="Guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_guardar" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:text="UTF-8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn_utf8"
+            android:layout_weight="1"
+            android:checked="true"
+            tools:text="UTF-8" />
+
+        <RadioButton
+            android:text="UTF-16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn_utf16"
+            android:layout_weight="1"
+            tools:text="UTF-16" />
+
+        <RadioButton
+            android:text="ISO-8859-15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn_iso"
+            android:layout_weight="1"
+            tools:text="ISO-8859-15" />
+    </RadioGroup>
+</LinearLayout>
